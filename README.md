@@ -13,11 +13,6 @@
 *   **高性能异步引擎 (Async Engine)**:
     *   **h2A 架构**: 双重缓冲异步消息队列，确保 UI 响应如丝般顺滑。
     *   **wu 流式处理**: 实时流式输出，打字机效果。
-*   **Windows 原生优化**:
-    *   完美解决 PowerShell 下的 ANSI 颜色乱码问题。
-    *   **智能编码适配**: 自动识别系统默认编码 (如 GBK)，防止命令输出乱码。
-    *   **Prompt 适配**: 内置 Windows 命令指引，避免使用不兼容的 Bash 语法。
-    *   `patch_stdout` 深度集成，确保在输入时日志不会打断提示符。
 *   **交互式 CLI (Interactive CLI)**:
     *   **可中断执行**: 支持 Ctrl+C 随时暂停 Agent，回到主菜单，而不会丢失当前上下文。
     *   **Human-in-the-loop**: Agent 可通过 `ask_user` 工具主动向用户提问，或通过 `ask_selection` 展示交互式菜单（支持上下键选择与自定义输入）。
